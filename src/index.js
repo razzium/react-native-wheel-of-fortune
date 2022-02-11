@@ -39,7 +39,7 @@ class WheelOfFortune extends Component {
         this.RewardCount = this.Rewards.length;
 
         this.numberOfSegments = this.RewardCount;
-        this.fontSize = 20;
+        this.fontSize = this.props.options.fontSize ? this.props.options.fontSize : 20;
         this.fontFamily = 20;
         this.oneTurn = 360;
         this.angleBySegment = this.oneTurn / this.numberOfSegments;
