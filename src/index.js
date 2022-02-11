@@ -177,7 +177,7 @@ class WheelOfFortune extends Component {
                 this.props.options.textColor ? this.props.options.textColor : '#fff'
             }
             style={{
-                fontFamily : this.props.options.fontFamily ? this.props.options.fontFamily : 'Roboto'
+                fontFamily : this.props.options.fontFamily ? this.props.options.fontFamily : 'Arial'
             }}
             textAnchor="middle"
             fontSize={this.fontSize}>
