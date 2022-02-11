@@ -1,6 +1,6 @@
 {
   "name": "react-native-wheel-of-fortune-dp",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "React Native Wheel Of Fortune Component (DP fork).",
   "main": "index.js",
   "scripts": {
