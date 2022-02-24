@@ -171,7 +171,7 @@ class WheelOfFortune extends Component {
     _textRender = (x, y, number, i) => (
 
         <Text
-            x={x - number.length * (this.fontSize/6 * number.length) / 2}
+            x={x - number.length * (this.fontSize/6 * number.length) / 2.5}
             y={y - 80}
             fill={
                 this.props.options.textColor ? this.props.options.textColor : '#fff'
