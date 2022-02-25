@@ -44,7 +44,7 @@ class WheelOfFortune extends Component {
         this.oneTurn = 360;
         this.angleBySegment = this.oneTurn / this.numberOfSegments;
         this.angleOffset = this.angleBySegment / 2;
-        this.winner = this.props.options.winner
+        this.winner = this.props.options.winner != undefined
             ? this.props.options.winner
             : Math.floor(Math.random() * this.numberOfSegments);
 
@@ -163,7 +163,6 @@ class WheelOfFortune extends Component {
                 finished: true,
                 winner: this._wheelPaths[winnerIndex].value,
             });
-            console.log('winnerIndex', winnerIndex)
             this.props.getWinner(this._wheelPaths[winnerIndex].value, winnerIndex);
         });
     };
